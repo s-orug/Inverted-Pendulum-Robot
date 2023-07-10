@@ -1,16 +1,16 @@
 #include "RPi_Pico_TimerInterrupt.h"
 
-#define TIMER0_INTERVAL_MS        1000
-#define TIMER1_INTERVAL_MS        2000
+#define TIMER0_INTERVAL_MS 1000
+#define TIMER1_INTERVAL_MS 2000
 
-//Init RPI_PICO_Timer, can use any from 0-15 pseudo-hardware timers
+// Init RPI_PICO_Timer, can use any from 0-15 pseudo-hardware timers
 RPI_PICO_Timer ITimer0(0);
 RPI_PICO_Timer ITimer1(1);
- 
-//For the robot, the isr timer interrupt need to interrupt every 20 ms => 50 Hz or every 12.5 ms => 80 Hz
+
+// For the robot, the isr timer interrupt need to interrupt every 20 ms => 50 Hz or every 12.5 ms => 80 Hz
 
 bool TimerHandler0(struct repeating_timer *t)
-{ 
+{
   Serial.print("Timer 0:\t");
   Serial.println(TIMER0_INTERVAL_MS);
   ITimer0.restartTimer();
@@ -37,6 +37,6 @@ void setup()
   ITimer1.restartTimer();
 }
 
-void loop(){
-
+void loop()
+{
 }
