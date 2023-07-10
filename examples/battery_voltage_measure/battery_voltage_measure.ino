@@ -6,6 +6,8 @@
 //
 // VOLTAGE INPUT FOR LED -> A0
 
+#define GLed       17
+#define RLed       18
 
 void setup() {
   pinMode(GLed, OUTPUT);
