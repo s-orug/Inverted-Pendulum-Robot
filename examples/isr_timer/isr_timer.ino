@@ -7,7 +7,7 @@
 RPI_PICO_Timer ITimer0(0);
 RPI_PICO_Timer ITimer1(1);
  
-
+//For the robot, the isr timer interrupt need to interrupt every 20 ms => 50 Hz or every 12.5 ms => 80 Hz
 
 bool TimerHandler0(struct repeating_timer *t)
 { 
