@@ -59,4 +59,4 @@ Feel free to explore and experiment with the project to enhance your understandi
 
 ## Conclusion
 
-The Inverted Pendulum Robot project is an exciting venture into the world of balancing robots and control systems. By following the instructions in this readme, you can build, set up, and run your own Inverted Pendulum Robot.
+The Inverted Pendulum Robot project is an exciting venture into the world of balancing robots and control systems. By following the instructions in this readme, you can build, set up, and run your own Inverted Pendulum Robot. 
